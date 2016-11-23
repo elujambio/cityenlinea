@@ -1,0 +1,50 @@
+
+.media-strip {
+	width:  $magazine-width-big; 
+	max-width:  100%;
+	margin-left:  auto; 
+	margin-right:  auto;
+	height:  auto;
+	display:  flex; 
+	flex-direction:  row; 
+	align-items:  center; 
+	justify-content:  space-between;
+}
+.social-links-container {
+	display:  flex; 
+	flex-direction:  row; 
+	align-items:  center; 
+	justify-content:  flex-start; 
+
+	margin-top:  24px; 
+	margin-bottom:  24px;
+}
+.social-link {
+	text-decoration:  none;
+	margin-right:  24px;
+	color:  $orange;
+	font-family: 'Vista Sans OT';
+	font-weight: 300;
+	font-style: italic;
+	font-weight:  500;
+}
+.social-link img {
+	height:  48px;
+}
+
+.alt-mag-link {
+	display:  flex; 
+	flex-direction:  row; 
+	align-items:  center; 
+	justify-content:  flex-end; 
+	font-family:  "Vista Slab OT"; 
+	font-weight:  500;	
+	margin-right:  24px; 
+	font-size:  28px;
+	color:  #212121; 
+
+}
+.alt-mag-link p {
+	font-size:  28px;
+	margin-right:  12px;
+}

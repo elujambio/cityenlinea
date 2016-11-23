@@ -1,0 +1,56 @@
+.header {
+	height:  263px;
+	width:  $magazine-width-big; 
+	max-width:  100%;
+	margin-left:  auto; 
+	margin-right:  auto; 
+
+	background-size:  cover; 
+	background-position:  center center;  
+}
+.logo {
+	height:  160px;
+	margin-top:  -40px;
+	margin-left:  48px;
+	position:  absolute;
+}
+.header__menu {
+	height:  88px; 
+	background:  #071822;
+	width:  100%; 
+	display:  flex; 
+	flex-direction:  row; 
+	align-items:  center; 
+	justify-content:  flex-end;
+}
+.menu__link {
+	font-family: 'Vista Slab OT';
+	font-weight:  500;
+	color:  #ffffff; 
+	text-decoration:  none; 
+	margin-right:  24px;
+	font-size:  24px;
+}
+.global-search {
+	border-style:  none; 
+	border:  solid 2px #ffffff; 
+	height:  36px; 
+	width:  120px; 
+	font-size:  18px;
+	border-radius:  18px;
+	padding-left:  12px;
+	padding-right:  36px;
+	background:  none;
+	font-family:  "Vista Sans OT";
+	color:  #ffffff;
+	font-weight:  normal;
+	display:  flex; 
+	flex-direction:  row; 
+	align-items:  center; 
+	justify-content:  flex-start;
+	margin-right:  24px;
+
+	background-image:  url("../images/search.svg");
+	background-position:  center right; 
+	background-repeat:  no-repeat;
+}

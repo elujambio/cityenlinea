@@ -1,0 +1,125 @@
+.highlights {
+	width:  100%; 
+	display:  flex; 
+	flex-direction:  row; 
+	align-items:  flex-start; 
+	justify-content:  space-between;
+	flex-wrap:  wrap;
+	position:  relative; 
+}
+.main-highlight {
+	display:  flex; 
+	flex-direction:  row;
+	width:  100%;   
+	height:  467px;
+	// flex: 1;
+	position:  relative; 
+} 
+[class*="highlight__section"] {
+	color:  $orange; 
+	font-family:  "Vista Slab OT";
+	font-weight:  500;
+	font-size:  18px;
+	padding-bottom:  12px;
+}
+.main-highlight__section {
+	padding-bottom:  24px;	
+	font-size:  24px; 
+}
+[class*="highlight__content"] {
+	display:  flex; 
+	flex-direction:  column; 
+	align-items:  flex-start; 
+	justify-content:  flex-start; 
+	z-index:  10;
+
+	box-sizing:  border-box;
+
+	background:  #ffffff; 
+
+}
+.main-highlight__content {
+	padding:  36px;
+	margin-top:  36px;
+	margin-bottom:  36px;
+	width:  288px;
+	// max-width:  40%; 
+}
+.main-highlight__title {
+	font-size:  36px; 
+	font-weight:  bold;
+	color:  #212121;
+}
+[class*="-highlight__description"] {
+	margin-top:  auto;
+}
+.highlight__link {
+	font-family:  "Vista Slab OT";
+	font-weight:  500; 
+	color:  #ee1d23;
+	text-decoration:  none; 
+	font-size:  18px; 
+	margin-top:  24px;
+}
+.main-highlight__image {
+	display:  flex; 
+	// flex-shrink:  0;
+	position:  absolute; 
+	top:  0; 
+	right:  0;
+	height:  100%; 
+	width:  calc(100% - 144px);
+}
+[class*="highlight__image"] {
+	background-size:  cover; 
+	background-position:  center center;
+}
+.secondary-highlight {
+	margin-top:  48px;
+	height:  402px;
+	width:  calc(100% / 2 - 24px);
+	display:  flex; 
+	flex-direction:  column; 
+	justify-content:  flex-end;
+	position:  relative; 
+}
+.secondary-highlight__image {
+	height:  calc(100% - 102px); 
+	width:  100%; 
+	position:  absolute; 
+	top:  0; 
+	left:  0; 
+}
+.secondary-highlight__content {
+	padding:  24px; 
+	background:  #ffffff; 
+	margin-left:  36px; 
+	margin-right:  36px;
+	z-index:  10; 
+	box-sizing:  border-box;
+}
+.secondary-highlight__title {
+	font-size:  21px;
+	font-weight:  normal;
+}
+.secondary-highlight__description {
+	margin-top:  24px;
+	min-height:  36px;
+}
+.tertiary-highlight {
+	width:  calc(100% / 3 - 32px);
+	height:  auto;
+}
+.tertiary-highlight__image {
+	width:  100%; 
+	padding-bottom:  100%; 
+	margin-top:  48px;
+}
+.tertiary-highlight__content {
+	padding-top:  24px; 
+	padding-bottom:  24px;
+}
+.tertiary-highlight__description {
+	margin-top:  24px; 
+	min-height:  36px;
+}

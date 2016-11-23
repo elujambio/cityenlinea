@@ -1,0 +1,50 @@
+.big-cover {
+	display:  flex; 
+	flex-direction:  column; 
+	position:  relative; 
+	width:  100%; 
+	height:  768px;
+	margin-bottom:  48px;
+}
+.big-cover__image {
+	display:  flex;
+	background-size:  cover; 
+	background-position:  center center; 
+	height:  calc(100% - 36px);
+	width:  calc(100% - 36px);
+	position:  absolute; 
+	top:  0; 
+	right:  0; 
+	min-width:  320px;
+	flex-shrink:  0; 
+}
+.big-cover__content {
+	padding-top:  36px; 
+	padding-right:  36px; 
+	background-color:  #ffffff; 
+	z-index:  10; 
+	position:  absolute; 
+	bottom:  0; 
+	left:  0;
+}
+.big-cover__title {
+	font-family: "Vista Sans OT";
+	font-style:  italic; 
+	font-weight:  300; 
+	font-size:  72px;
+	color:  $orange;
+	// max-width:  50%;
+}
+.big-cover__description {
+	font-family:  "Vista Sans OT";
+	// font-weight:  300; 
+	margin-top:  24px;
+	font-size:  21px; 
+	color: #424242;
+	max-width:  300px;
+	line-height:  125%;
+}
+.big-cover .highlight__link {
+	margin-top:  24px;
+	display:  flex;
+}

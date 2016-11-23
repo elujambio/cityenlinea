@@ -1,0 +1,117 @@
+/*------------------------------------*\
+  #RESET
+\*------------------------------------*/
+
+::selection {
+	background-color: #bf955a;
+	color:  #ffffff;
+}
+
+
+* {
+	margin:   0 0; 
+	padding:  0 0;
+}
+
+html, 
+body {
+	height:  100%; 
+	width:  100%; 
+
+	// font-family:  '', sans-serif;
+	// background:  #F5F5F5;
+}
+a {
+	text-decoration:  none;
+}
+/*------------------------------------*\
+  #BASE-IMPORTS
+\*------------------------------------*/
+
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/globals';
+
+
+/*------------------------------------*\
+  #BASE-STYLES
+\*------------------------------------*/
+
+$magazine-width-big:  1280px;
+
+.magazine {
+	width:  $magazine-width-big; 
+	max-width:  100%;
+	margin-left:  auto; 
+	margin-right:  auto; 
+	display:  flex; 
+	flex-direction:  row; 
+	align-items:  flex-start; 
+	justify-content:  flex-start;
+	flex-wrap:  wrap;
+	position:  relative;
+	margin-bottom:  216px;
+}
+.main-content {
+	display:  flex;
+	flex-direction:  row;
+	align-items:  flex-start; 
+	justify-content:  flex-start; 
+	flex-wrap:  wrap;
+	width:  calc(100% * 2/3 - 24px);
+	position:  relative;
+	// margin-right:  48px;
+}
+.side-content {
+	width:  calc(100% * 1/3 - 24px);
+}
+.main-content + .side-content {
+	margin-left:  48px;
+}
+.side-content + .main-content {
+	margin-left:  48px;
+}
+.red {
+	color:  #ee1d23; 
+}
+
+[class*="__title"] {
+	font-family:  "Vista Slab OT"; 
+	font-weight:  normal;
+	font-size:  21px;
+}
+[class*="__date"] {
+	font-family:  "Vista Sans OT"; 
+	font-weight:  300;
+	font-style:  italic; 
+	font-size:  12px;
+	margin-top:  12px;
+	color:  #757575;
+}
+[class*="__description"] {
+	font-family:  "Vista Slab OT";
+	font-weight:  300; 
+	font-size:  18px; 
+	color:  #424242;
+}
+
+
+
+
+@import "styles/header";
+
+@import "styles/media-strip";
+
+@import "styles/highlights";
+
+@import "styles/ads";
+
+@import "styles/big-cover";
+
+@import "styles/recent-news";
+
+@import "styles/side-content";
+
+@import "styles/hints";
+
+@import "styles/single-post";
