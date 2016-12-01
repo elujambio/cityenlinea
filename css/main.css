@@ -194,7 +194,8 @@ table {
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+  position: relative; }
 
 .logo {
   height: 160px;
@@ -225,20 +226,21 @@ table {
           justify-content: flex-end; }
 
 .menu__link {
-  font-family: 'Vista Slab OT';
-  font-weight: 500;
+  font-family: 'Vista Sans OT';
   color: #ffffff;
   text-decoration: none;
   margin-right: 24px;
-  font-size: 24px; }
+  letter-spacing: 1px;
+  font-size: 18px;
+  overflow: hidden;
+  max-width: 200px; }
 
 .global-search {
   border-style: none;
-  border: solid 2px #ffffff;
+  border-bottom: solid 1px #ffffff;
   height: 36px;
-  width: 120px;
+  width: 180px;
   font-size: 18px;
-  border-radius: 18px;
   padding-left: 12px;
   padding-right: 36px;
   background: none;
@@ -262,10 +264,29 @@ table {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-right: 24px;
+  margin-right: 72px;
   background-image: url("../images/search.svg");
   background-position: center right;
   background-repeat: no-repeat; }
+
+.burger-menu-button {
+  height: 18px;
+  width: 24px;
+  position: absolute;
+  right: 24px;
+  z-index: 200; }
+  .burger-menu-button div {
+    height: 1px;
+    width: 100%;
+    background: #ffffff;
+    position: absolute; }
+  .burger-menu-button .burger-1 {
+    top: 0px;
+    left: 0px; }
+  .burger-menu-button .burger-2 {
+    top: 8px; }
+  .burger-menu-button .burger-3 {
+    top: 16px; }
 
 .media-strip {
   width: 1280px;
@@ -1162,5 +1183,41 @@ table {
     -webkit-transform: translate(-50%, -50%) rotate(-45deg);
         -ms-transform: translate(-50%, -50%) rotate(-45deg);
             transform: translate(-50%, -50%) rotate(-45deg); }
+
+.burger-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 96px;
+  padding-left: 48px;
+  height: 100vh;
+  width: 50%;
+  box-sizing: border-box;
+  position: fixed;
+  left: 100%;
+  top: 0;
+  background: #F5F5F5;
+  z-index: 100; }
+
+.burger-link {
+  font-family: "Vista Sans OT";
+  font-weight: 300;
+  font-style: italic;
+  color: #424242;
+  font-size: 21px;
+  margin-bottom: 18px; }
+
+.burger-menu__label {
+  font-family: "Vista Sans OT";
+  font-weight: 300;
+  color: #212121;
+  font-size: 14px;
+  margin-bottom: 36px; }
 
 /*# sourceMappingURL=main.css.map */

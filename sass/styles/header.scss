@@ -7,6 +7,9 @@
 
 	background-size:  cover; 
 	background-position:  center center;  
+	position:  relative;
+
+	// z-index:  100;
 }
 .logo {
 	height:  160px;
@@ -24,20 +27,24 @@
 	justify-content:  flex-end;
 }
 .menu__link {
-	font-family: 'Vista Slab OT';
-	font-weight:  500;
+	font-family: 'Vista Sans OT';
+	// font-weight:  300;
 	color:  #ffffff; 
 	text-decoration:  none; 
 	margin-right:  24px;
-	font-size:  24px;
+	letter-spacing:  1px;
+	font-size:  18px;
+	overflow:  hidden;
+	max-width:  200px;
 }
 .global-search {
 	border-style:  none; 
-	border:  solid 2px #ffffff; 
+	// border:  solid 2px rgba(255,255,255,.86); 
+	border-bottom:  solid 1px #ffffff;
 	height:  36px; 
-	width:  120px; 
+	width:  180px; 
 	font-size:  18px;
-	border-radius:  18px;
+	// border-radius:  6px;
 	padding-left:  12px;
 	padding-right:  36px;
 	background:  none;
@@ -48,9 +55,32 @@
 	flex-direction:  row; 
 	align-items:  center; 
 	justify-content:  flex-start;
-	margin-right:  24px;
+	margin-right:  72px;
 
 	background-image:  url("../images/search.svg");
 	background-position:  center right; 
 	background-repeat:  no-repeat;
+}
+.burger-menu-button {
+	height:  18px; 
+	width:  24px;
+	position:  absolute;
+	right:  24px;
+	z-index:  200;
+	div {
+		height:  1px;
+		width:  100%; 
+		background:  #ffffff;
+		position:  absolute;  
+	}
+	.burger-1 {
+		top:  0px; 
+		left:  0px;
+	}
+	.burger-2 {
+		top:  8px;
+	}
+	.burger-3 {
+		top:  16px;
+	}
 }
